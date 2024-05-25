@@ -6,7 +6,6 @@ In other words, if there is more than one repeated number, you must return the n
 */
 
 const giftIds = [2, 1, 3, 5, 3, 2];
-let duplicateArray = [];
 const firstRepeatedId = findFirstRepeated(giftIds);
 console.log(firstRepeatedId);
 
