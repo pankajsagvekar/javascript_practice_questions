@@ -9,14 +9,13 @@ const giftIds = [2, 1, 3, 5, 3, 2];
 const firstRepeatedId = findFirstRepeated(giftIds);
 console.log(firstRepeatedId);
 
-function findFirstRepeated(ids) {
+function findFirstRepeated(gifts) {
     let seen = {};
-    for (let i = 0; i < ids.length; i++) {
-        if (seen[ids[i]]) {
-            return ids[i];
+    for (let i = 0; i < gifts.length; i++) {
+        if (seen[gifts[i]]) {
+            return gifts[i];
         }
-        seen[ids[i]] = true;
-        console.log(seen);
+        seen[gifts[i]] = true;
     }
     return -1;
 }
