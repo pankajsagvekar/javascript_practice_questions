@@ -15,8 +15,8 @@ function findFirstRepeated(ids) {
         if (seen[ids[i]]) {
             return ids[i];
         }
-        console.log(seen);
         seen[ids[i]] = true;
+        console.log(seen);
     }
     return -1;
 }
